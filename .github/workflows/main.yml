@@ -1,5 +1,15 @@
-- name: Rename Template Repository
-- uses: kota65535/github-template-rename-action@v1
-  with:
-    from-name: test-gh-templates
-    to-name: test-gh-templates-impl1
+name: template-provision-test
+
+on: 
+  push:
+    branches: ["main"]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: kota65535/github-template-rename-action@v1.2.0
+        with:
+          from-name: test-gh-templates
+          to-name: test-gh-templates-impl1
