@@ -1,0 +1,5 @@
+- name: Rename Template Repository
+- uses: kota65535/github-template-rename-action@v1
+  with:
+    from-name: test-gh-templates
+    to-name: test-gh-templates-impl1
