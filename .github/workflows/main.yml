@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: kota65535/github-template-rename-action@v1.2.0
         with:
-          from-name: test-gh-templates
-          to-name: test-gh-templates-impl1
+          from-name: _template_Service
+          to-name: RealService
